@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Workdemy',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/assets/ImageSocials.jpg',
         width: 1200,
         height: 630,
         alt: 'Workdemy - Dashboard',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Workdemy | Cultura começa aqui.',
     description: 'Plataforma de Gestão Educacional - Workdemy.',
-    images: ['/og-image.jpg'],
+    images: ['/assets/ImageSocials.jpg'],
   },
 }
 
