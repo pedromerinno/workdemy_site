@@ -228,15 +228,6 @@ export default function HeroSection() {
             {t.nav.recursos}
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
           </a>
-
-          <a 
-            href="#planos" 
-            onClick={(e) => handleNavClick('#planos', e)}
-            className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
-          >
-            {t.nav.planos}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
-          </a>
         </motion.div>
 
         {/* Action Items - Right Section */}
@@ -396,14 +387,6 @@ export default function HeroSection() {
               {t.nav.recursos}
             </a>
 
-            <a 
-              href="#planos" 
-              onClick={(e) => handleNavClick('#planos', e)}
-              className="text-base font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200"
-            >
-              {t.nav.planos}
-            </a>
-
             <div className="pt-6 mt-6 border-t border-[#EAEAEA] w-full max-w-xs space-y-3">
               {/* Language Selector Mobile */}
               <div className="px-3 py-2.5">
@@ -535,7 +518,7 @@ export default function HeroSection() {
           className="w-[80vw] rounded-2xl overflow-hidden shadow-2xl border border-beige-200/50"
         >
           <Image
-            src="/assets/IMG_07.png"
+            src="/assets/SITE_00.jpg"
             alt="Dashboard Workdemy - Interface principal da plataforma"
             width={1400}
             height={900}
