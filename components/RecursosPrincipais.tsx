@@ -52,16 +52,16 @@ export default function RecursosPrincipais() {
     switch (type) {
       case 'brain':
         return (
-          <div className="relative w-full h-64 xl:h-72 flex items-center justify-center">
-            <div className="relative w-full max-w-[320px]">
-              <div className="relative mx-auto w-32 h-32 xl:w-40 xl:h-40 bg-white rounded-2xl border border-[#E8E8E8] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <Brain className="w-16 h-16 xl:w-20 xl:h-20" style={{ color }} />
+          <div className="relative w-full h-80 xl:h-96 flex items-center justify-center">
+            <div className="relative w-full max-w-[380px]">
+              <div className="relative mx-auto w-40 h-40 xl:w-48 xl:h-48 bg-white rounded-2xl border border-[#E8E8E8] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <Brain className="w-20 h-20 xl:w-24 xl:h-24" style={{ color }} />
               </div>
-              <div className="absolute -left-5 top-5 w-24 h-24 xl:w-28 xl:h-28 bg-white rounded-xl border border-[#E8E8E8] transform rotate-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: color }}></div>
+              <div className="absolute -left-5 top-5 w-28 h-28 xl:w-32 xl:h-32 bg-white rounded-xl border border-[#E8E8E8] transform rotate-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <div className="w-5 h-5 rounded-full" style={{ backgroundColor: color }}></div>
               </div>
-              <div className="absolute -right-5 top-5 w-24 h-24 xl:w-28 xl:h-28 bg-white rounded-xl border border-[#E8E8E8] transform -rotate-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: color }}></div>
+              <div className="absolute -right-5 top-5 w-28 h-28 xl:w-32 xl:h-32 bg-white rounded-xl border border-[#E8E8E8] transform -rotate-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <div className="w-5 h-5 rounded-full" style={{ backgroundColor: color }}></div>
               </div>
               <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ overflow: 'visible' }}>
                 <line x1="20%" y1="30%" x2="50%" y2="50%" stroke={color} strokeWidth="2" strokeOpacity="0.2" />
@@ -73,7 +73,7 @@ export default function RecursosPrincipais() {
       
       case 'creation':
         return (
-          <div className="relative w-full h-64 xl:h-72">
+          <div className="relative w-full h-80 xl:h-96">
             <div className="relative h-full flex items-center justify-center gap-5">
               <div className="bg-white rounded-xl p-5 xl:p-6 border border-[#E8E8E8] transform rotate-2 z-10 group-hover:scale-105 transition-transform duration-300">
                 <div className="h-3 bg-[#4F4F4F]/20 rounded w-32 mb-3"></div>
@@ -94,7 +94,7 @@ export default function RecursosPrincipais() {
       
       case 'assistant':
         return (
-          <div className="relative w-full h-64 xl:h-72 space-y-4">
+          <div className="relative w-full h-80 xl:h-96 space-y-4">
             <div className="bg-white rounded-xl p-6 xl:p-7 border border-[#E8E8E8]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 xl:w-14 xl:h-14 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color }}>
@@ -115,7 +115,7 @@ export default function RecursosPrincipais() {
       
       case 'quiz':
         return (
-          <div className="relative w-full h-64 xl:h-72 space-y-4">
+          <div className="relative w-full h-80 xl:h-96 space-y-4">
             <div className="bg-white rounded-xl p-6 xl:p-7 border border-[#E8E8E8]">
               <div className="flex items-center justify-between mb-4">
                 <div className="h-3.5 bg-[#4F4F4F]/30 rounded w-1/2"></div>
@@ -141,7 +141,7 @@ export default function RecursosPrincipais() {
       
       case 'dashboard':
         return (
-          <div className="relative w-full h-64 xl:h-72">
+          <div className="relative w-full h-80 xl:h-96">
             <div className="bg-white rounded-xl p-6 xl:p-7 border border-[#E8E8E8] h-full">
               <div className="flex items-center justify-between mb-4">
                 <div className="h-3.5 bg-[#4F4F4F]/30 rounded w-1/3"></div>
@@ -150,7 +150,7 @@ export default function RecursosPrincipais() {
                   +85%
                 </div>
               </div>
-              <div className="relative h-40 xl:h-44">
+              <div className="relative h-52 xl:h-60">
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-2.5 h-full">
                   {[35, 55, 75, 100, 60].map((height, i) => (
                     <div
@@ -170,7 +170,7 @@ export default function RecursosPrincipais() {
       
       case 'onboarding':
         return (
-          <div className="relative w-full h-64 xl:h-72">
+          <div className="relative w-full h-80 xl:h-96">
             <div className="bg-white rounded-xl p-6 xl:p-7 border border-[#E8E8E8] h-full">
               <div className="flex items-center justify-between mb-5">
                 <div className="h-3.5 bg-[#4F4F4F]/30 rounded w-1/2"></div>
@@ -236,7 +236,7 @@ export default function RecursosPrincipais() {
         <div className="mt-8 lg:mt-12 -mx-4 sm:-mx-6 lg:-mx-8">
           <HorizontalScrollCarousel height="250vh">
             {/* Espaçador inicial menor para começar com o primeiro card visível */}
-            <div className="w-[50vw] sm:w-[40vw] lg:w-[30vw] flex-shrink-0" />
+            <div className="w-[40vw] sm:w-[35vw] lg:w-[25vw] flex-shrink-0" />
             {recursos.map((recurso, index) => {
               const Icon = recurso.icon
               return (
@@ -247,14 +247,14 @@ export default function RecursosPrincipais() {
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ delay: index * 0.08, duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                   className={cn(
-                    "group relative rounded-2xl p-6 xl:p-8 shadow-sm",
+                    "group relative rounded-2xl p-6 xl:p-8",
                     "border border-[#E0E0E0]/50",
-                    "hover:shadow-xl hover:-translate-y-1 hover:border-[#D0D0D0]",
+                    "hover:-translate-y-1 hover:border-[#D0D0D0]",
                     "transition-all duration-500 ease-out",
                     "flex flex-col",
                     "bg-white",
-                    "w-[90vw] sm:w-[85vw] lg:w-[80vw] xl:w-[75vw] max-w-[600px] flex-shrink-0",
-                    "h-[480px] sm:h-[520px] lg:h-[560px]"
+                    "w-[90vw] sm:w-[85vw] lg:w-[80vw] xl:w-[75vw] max-w-[750px] flex-shrink-0",
+                    "h-[600px] sm:h-[650px] lg:h-[700px]"
                   )}
                 >
                   {/* Icon Badge */}
@@ -268,7 +268,7 @@ export default function RecursosPrincipais() {
                   </div>
 
                   {/* Visual Preview */}
-                  <div className="mb-auto min-h-[240px] xl:min-h-[280px]">
+                  <div className="mb-auto min-h-[380px] xl:min-h-[440px]">
                     {renderVisual(recurso.visual, recurso.color)}
                   </div>
 
@@ -285,7 +285,7 @@ export default function RecursosPrincipais() {
               )
             })}
             {/* Espaçador final menor para terminar com o último card visível */}
-            <div className="w-[50vw] sm:w-[40vw] lg:w-[30vw] flex-shrink-0" />
+            <div className="w-[40vw] sm:w-[35vw] lg:w-[25vw] flex-shrink-0" />
           </HorizontalScrollCarousel>
         </div>
       </div>
