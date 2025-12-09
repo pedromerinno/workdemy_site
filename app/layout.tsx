@@ -5,8 +5,8 @@ import CookieConsent from '@/components/CookieConsent'
 import ChatDialog from '@/components/ChatDialog'
 
 export const metadata: Metadata = {
-  title: 'Workdemy - Transforme sua carreira com educação de qualidade',
-  description: 'Plataforma de educação online que transforma profissionais em especialistas através de cursos práticos e atualizados.',
+  title: 'Workdemy | Cultura começa aqui.',
+  description: 'Plataforma de Gestão Educacional - Workdemy.',
   icons: {
     icon: '/assets/favicon.svg',
     shortcut: '/assets/favicon.svg',
