@@ -20,9 +20,10 @@ export default function FAQ() {
       <div className="container mx-auto max-w-3xl">
         <SectionTitle
           as="h2"
-          size="md"
+          size="sm"
           align="center"
           weight="bold"
+          animated
         >
           {t.faq.title}
         </SectionTitle>

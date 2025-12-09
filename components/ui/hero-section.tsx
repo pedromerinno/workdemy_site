@@ -297,6 +297,8 @@ export default function HeroSection() {
               <motion.a
                 key="entrar-link"
                 href="https://app.workdemy.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200"
                 initial={{ opacity: 0, width: 0 }}
                 animate={{ opacity: 1, width: 'auto' }}
@@ -316,6 +318,8 @@ export default function HeroSection() {
           </AnimatePresence>
           <motion.a
             href="https://app.workdemy.com/signup"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#BF7529] hover:bg-[#A6631F] text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98] whitespace-nowrap"
             animate={{
               paddingLeft: isScrolled ? '1rem' : '1.25rem',
@@ -430,12 +434,16 @@ export default function HeroSection() {
 
               <a
                 href="https://app.workdemy.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center text-base font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200"
               >
                 {t.nav.entrar}
               </a>
               <a
                 href="https://app.workdemy.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full text-center px-5 py-3 bg-[#BF7529] hover:bg-[#A6631F] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
               >
                 {t.nav.comecarAgora}
@@ -500,7 +508,7 @@ export default function HeroSection() {
       </p>
 
       <div className="relative z-10 mx-auto w-full flex items-center justify-center gap-3 mt-8">
-        <a href="https://app.workdemy.com/signup" className="bg-[#BF7529] hover:bg-[#BF7529]/90 text-white px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:shadow-lg hover:scale-105 active:scale-100">
+        <a href="https://app.workdemy.com/signup" target="_blank" rel="noopener noreferrer" className="bg-[#BF7529] hover:bg-[#BF7529]/90 text-white px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:shadow-lg hover:scale-105 active:scale-100">
           {t.hero.comecarAgora}
         </a>
         <button className="flex items-center gap-2 border border-[#BF7529]/30 hover:border-[#BF7529]/50 hover:bg-[#BF7529]/10 rounded-full px-8 py-4 transition-all shadow-sm hover:shadow-md group">

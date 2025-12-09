@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from '@/hooks/useTranslations'
-import { SectionTitle } from './ui/section-title'
+import { AnimatedTitle } from './ui/animated-title'
 
 export default function ParaQuem() {
   const t = useTranslations()
@@ -31,11 +31,10 @@ export default function ParaQuem() {
     <section
       id="para-quem"
       className="py-32 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#F8F7F4' }}
     >
       <div className="container mx-auto max-w-[1400px]">
         {/* Título Principal */}
-        <SectionTitle
+        <AnimatedTitle
           as="h2"
           size="md"
           align="left"
@@ -43,9 +42,10 @@ export default function ParaQuem() {
           subtitle={t.paraQuem.subtitle}
           subtitleClassName="text-[#4F4F4F] mt-6"
           animated
+          className="max-w-4xl"
         >
           {t.paraQuem.title}
-        </SectionTitle>
+        </AnimatedTitle>
 
         {/* Grid de 3 Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -56,10 +56,10 @@ export default function ParaQuem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+              className="rounded-2xl overflow-hidden flex flex-col"
             >
               {/* Imagem Landscape */}
-              <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-2xl">
+              <div className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl">
                 <Image
                   src={perfil.imagem}
                   alt={perfil.titulo}

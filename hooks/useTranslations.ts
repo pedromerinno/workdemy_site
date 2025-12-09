@@ -5,3 +5,4 @@ export function useTranslations(): Translations {
   const { currentLanguage } = useLanguage()
   return getTranslations(currentLanguage)
 }
+

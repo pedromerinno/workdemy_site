@@ -215,23 +215,25 @@ export default function RecursosPrincipais() {
   return (
     <section
       id="recursos"
-      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#F6F5F2' }}
+      className="py-10 sm:py-12 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: '#FAFAF9' }}
     >
       <div className="w-full">
         {/* Header Section */}
         <div className="container mx-auto max-w-7xl">
-          <SectionTitle
-            as="h2"
-            size="md"
-            align="center"
-            weight="bold"
-            subtitle={t.recursos.subtitle}
-            subtitleClassName="text-[#4F4F4F] mt-6"
-            animated
-          >
-            {t.recursos.title}
-          </SectionTitle>
+          <div className="[&>div]:!mb-16 [&>div]:lg:!mb-24 [&>div]:!mt-12 [&>div]:lg:!mt-16">
+            <SectionTitle
+              as="h2"
+              size="sm"
+              align="center"
+              weight="bold"
+              subtitle={t.recursos.subtitle}
+              subtitleClassName="text-[#4F4F4F] mt-6"
+              animated
+            >
+              {t.recursos.title}
+            </SectionTitle>
+          </div>
         </div>
 
         {/* Horizontal Scroll Carousel with Animation */}
@@ -250,13 +252,13 @@ export default function RecursosPrincipais() {
                   transition={{ delay: index * 0.08, duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                   className={cn(
                     "group relative rounded-2xl p-6 xl:p-8 shadow-sm",
-                    "border border-[#E0E0E0]",
+                    "border border-[#E0E0E0]/50",
                     "hover:shadow-xl hover:-translate-y-1 hover:border-[#D0D0D0]",
                     "transition-all duration-500 ease-out",
                     "flex flex-col",
                     "bg-white",
                     "w-[90vw] sm:w-[85vw] lg:w-[80vw] xl:w-[75vw] max-w-[600px] flex-shrink-0",
-                    "h-[550px] sm:h-[600px] lg:h-[650px]"
+                    "h-[480px] sm:h-[520px] lg:h-[560px]"
                   )}
                 >
                   {/* Icon Badge */}
@@ -270,16 +272,16 @@ export default function RecursosPrincipais() {
                   </div>
 
                   {/* Visual Preview */}
-                  <div className="mb-4 xl:mb-5 min-h-[160px] xl:min-h-[180px]">
+                  <div className="mb-3 xl:mb-4 min-h-[140px] xl:min-h-[160px]">
                     {renderVisual(recurso.visual, recurso.color)}
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 flex flex-col justify-start">
-                    <h3 className="text-lg xl:text-xl font-semibold text-[#1A1A1A] mb-3 xl:mb-4 leading-tight tracking-tight">
+                    <h3 className="text-base xl:text-lg font-semibold text-[#1A1A1A] mb-2 xl:mb-3 leading-tight tracking-tight">
                       {recurso.titulo}
                     </h3>
-                    <p className="text-sm xl:text-base text-[#4F4F4F] leading-relaxed">
+                    <p className="text-sm xl:text-[15px] text-[#4F4F4F] leading-relaxed">
                       {recurso.descricao}
                     </p>
                   </div>

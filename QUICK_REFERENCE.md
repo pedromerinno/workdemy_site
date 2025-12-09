@@ -326,3 +326,4 @@ npm run lint
 ---
 
 **Última atualização**: 2024
+

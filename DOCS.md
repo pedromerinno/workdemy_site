@@ -557,3 +557,4 @@ Acesse com `process.env.NEXT_PUBLIC_*`
 ---
 
 **Última atualização**: 2024
+

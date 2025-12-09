@@ -246,6 +246,20 @@ export default function ScrollImageSequenceSequencia() {
     [30, 0, 0, -20]
   )
 
+  // Anima padding e border radius baseado no progresso do scroll
+  // Começa com padding e diminui gradualmente durante o scroll
+  const padding = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.5, 0.8, 1],
+    [24, 24, 0, 0, 0]
+  )
+
+  const borderRadius = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.5, 0.8, 1],
+    [100, 100, 0, 0, 0]
+  )
+
   // Altura total necessária para o scroll
   // Ajustado para dar tempo suficiente para todas as imagens aparecerem
   const totalScrollHeight = TOTAL_IMAGES * 1.2 // 1.2vh por imagem para transição suave
@@ -258,7 +272,14 @@ export default function ScrollImageSequenceSequencia() {
       style={{ backgroundColor: '#F9F8F5' }}
     >
       {/* Container sticky para imagens - Full Width */}
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center z-10">
+      <motion.div 
+        className="sticky top-0 h-screen w-full flex items-center justify-center z-10"
+        style={{
+          padding: padding,
+          borderRadius: borderRadius,
+          overflow: 'hidden'
+        }}
+      >
         {/* Container de imagens - Full Width */}
         <div className="relative w-full h-full">
           {imageSequence.map((src, index) => (
@@ -321,7 +342,7 @@ export default function ScrollImageSequenceSequencia() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Spacer para criar espaço de scroll */}
       <div style={{ height: `${totalScrollHeight}vh` }} />

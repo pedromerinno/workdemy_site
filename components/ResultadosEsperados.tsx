@@ -51,7 +51,7 @@ export default function ResultadosEsperados() {
   return (
     <section
       id="resultados"
-      className="relative py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{ backgroundColor: '#F9F8F5' }}
     >
       {/* Subtle background pattern */}
@@ -60,7 +60,7 @@ export default function ResultadosEsperados() {
       <div className="relative container mx-auto max-w-6xl">
         <SectionTitle
           as="h2"
-          size="md"
+          size="sm"
           align="center"
           weight="bold"
           animated
@@ -70,7 +70,7 @@ export default function ResultadosEsperados() {
           {t.resultadosEsperados.title}
         </SectionTitle>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 mt-16 lg:mt-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 mt-10 sm:mt-12 lg:mt-14">
           {resultados.map((resultado, index) => (
             <motion.div
               key={index}

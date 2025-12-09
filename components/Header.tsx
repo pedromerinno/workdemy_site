@@ -15,7 +15,6 @@ const navItems = [
   { label: 'Início', href: '#inicio' },
   { label: 'Como Funciona', href: '#como-funciona' },
   { label: 'Recursos', href: '#recursos' },
-  { label: 'Planos', href: '#planos' },
 ]
 
 const languages = [
@@ -229,12 +228,16 @@ export default function Header() {
 
             <a
               href="https://app.workdemy.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200"
             >
               Entrar
             </a>
             <a
               href="https://app.workdemy.com/signup"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 bg-[#BF7529] hover:bg-[#A6631F] text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
             >
               Começar agora
@@ -341,12 +344,16 @@ export default function Header() {
                 
                 <a
                   href="https://app.workdemy.com/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-base font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] hover:bg-[#F9F9F9] transition-colors duration-200 rounded-lg px-3 py-2.5"
                 >
                   Entrar
                 </a>
                 <a
                   href="https://app.workdemy.com/signup"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full text-center px-5 py-3 bg-[#BF7529] hover:bg-[#A6631F] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
                 >
                   Começar agora

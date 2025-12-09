@@ -6,7 +6,6 @@ import RecursosPrincipais from '@/components/RecursosPrincipais'
 import ParaQuem from '@/components/ParaQuem'
 import ResultadosEsperados from '@/components/ResultadosEsperados'
 import Depoimentos from '@/components/Depoimentos'
-import Planos from '@/components/Planos'
 import FAQ from '@/components/FAQ'
 import CTAFinal from '@/components/CTAFinal'
 import Footer from '@/components/Footer'
@@ -24,7 +23,6 @@ export default function Home() {
       <ParaQuem />
       <ResultadosEsperados />
       <Depoimentos />
-      <Planos />
       <FAQ />
       <CTAFinal />
       <Footer />

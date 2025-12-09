@@ -22,35 +22,35 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    id: 'doordash',
-    companyName: 'DoorDash',
-    companyLogo: 'DOORDASH',
+    id: 'merinno',
+    companyName: 'MERINNO',
+    companyLogo: 'MERINNO',
     quote: 'A Workdemy transformou minha carreira. Em 3 meses consegui uma promoção e aumento de 40%. Os cursos são práticos e realmente preparam para o mercado.',
     author: 'Maria Silva',
     role: 'Vice President of Finance',
-    company: 'DoorDash',
+    company: 'MERINNO',
     image: '/assets/features/features_01.jpg',
     caseStudyUrl: '#',
   },
   {
-    id: 'seatgeek',
-    companyName: 'SeatGeek',
-    companyLogo: 'SEATGEEK',
+    id: 'izz-group',
+    companyName: 'IZZ GROUP',
+    companyLogo: 'IZZ GROUP',
     quote: 'Melhor investimento que fiz na minha educação. Conteúdo atualizado, professores que realmente entendem do mercado e suporte excepcional.',
     author: 'João Santos',
     role: 'Product Manager',
-    company: 'SeatGeek',
+    company: 'IZZ GROUP',
     image: '/assets/features/features_02.jpg',
     caseStudyUrl: '#',
   },
   {
-    id: 'lemonade',
-    companyName: 'Lemonade',
-    companyLogo: 'LEMONADE',
+    id: '2btrust',
+    companyName: '2BTRUST',
+    companyLogo: '2BTRUST',
     quote: 'A flexibilidade de estudar no meu ritmo foi essencial. Consegui equilibrar trabalho, estudos e vida pessoal sem abrir mão da qualidade.',
     author: 'Ana Costa',
     role: 'UX Designer',
-    company: 'Lemonade',
+    company: '2BTRUST',
     image: '/assets/features/features_03.jpg',
     caseStudyUrl: '#',
   },
@@ -65,24 +65,25 @@ export default function Depoimentos() {
   return (
     <section
       id="depoimentos"
-      className="py-32 px-4 sm:px-6 lg:px-8"
+      className="py-20 px-4 sm:px-6 lg:px-8"
       style={{ backgroundColor: '#F7F6F3' }}
     >
       <div className="container mx-auto max-w-[1600px]">
         {/* Section Title */}
         <SectionTitle
           as="h2"
-          size="md"
+          size="sm"
           align="center"
           weight="bold"
           subtitle={t.depoimentos.subtitle}
           subtitleClassName="text-gray-600"
+          animated
         >
           {t.depoimentos.title}
         </SectionTitle>
 
         {/* Company Navigation */}
-        <div className="flex items-center justify-center gap-10 sm:gap-14 md:gap-20 lg:gap-24 xl:gap-28 mb-12 mt-16 overflow-x-auto scrollbar-hide pb-2">
+        <div className="flex items-center justify-center gap-20 sm:gap-28 md:gap-36 lg:gap-44 xl:gap-52 mb-12 mt-16 overflow-x-auto scrollbar-hide pb-2">
           {testimonials.map((testimonial) => (
             <button
               key={testimonial.id}
@@ -113,7 +114,7 @@ export default function Depoimentos() {
           >
             <div className="grid md:grid-cols-[45%_55%] lg:grid-cols-[42%_58%] gap-4 md:gap-6">
               {/* Left Column - Image */}
-              <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] rounded-2xl overflow-hidden">
+              <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-full min-h-[350px] md:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden">
                 <Image
                   src={currentTestimonial.image}
                   alt={`${currentTestimonial.author} da ${currentTestimonial.company}`}
@@ -125,33 +126,15 @@ export default function Depoimentos() {
               </div>
 
               {/* Right Column - Content */}
-              <div className="flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16">
+              <div className="flex flex-col justify-between p-6 sm:p-8 md:p-10 lg:p-12">
                 <div>
-                  {/* Company Logo */}
-                  <div className="mb-10">
-                    <div className="flex items-center gap-3">
-                      <div
-                        className="w-12 h-12 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                        style={{ backgroundColor: '#E60012' }}
-                      >
-                        {currentTestimonial.companyLogo.charAt(0)}
-                      </div>
-                      <span
-                        className="text-2xl md:text-3xl font-bold tracking-tight"
-                        style={{ color: '#E60012' }}
-                      >
-                        {currentTestimonial.companyLogo}
-                      </span>
-                    </div>
-                  </div>
-
                   {/* Quote */}
-                  <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-gray-900 leading-[1.2] mb-8 md:mb-10">
+                  <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-900 leading-[1.2] mb-6 md:mb-8">
                     "{currentTestimonial.quote}"
                   </blockquote>
 
                   {/* Attribution */}
-                  <p className="text-sm sm:text-base md:text-lg text-gray-500 mb-8 md:mb-10">
+                  <p className="text-sm sm:text-base text-gray-500 mb-6 md:mb-8">
                     — {currentTestimonial.author}, {currentTestimonial.role},{' '}
                     {currentTestimonial.company}
                   </p>
@@ -174,7 +157,7 @@ export default function Depoimentos() {
         </AnimatePresence>
 
         {/* Bottom Divider */}
-        <div className="mt-20 flex items-center">
+        <div className="mt-12 flex items-center">
           <div className="flex-1 h-[1px] bg-gray-300"></div>
           <div className="w-[40%] h-[1px] bg-[#FF6B35]"></div>
         </div>

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { SectionTitle } from "@/components/ui/section-title";
+import { AnimatedTitle } from "@/components/ui/animated-title";
 import { useTranslations } from "@/hooks/useTranslations";
 
 export default function IAProcessos() {
@@ -100,7 +100,7 @@ export default function IAProcessos() {
     >
 
       <div className="px-4 sm:px-6 lg:px-8">
-        <SectionTitle
+        <AnimatedTitle
           as="h2"
           size="sm"
           align="center"
@@ -109,7 +109,7 @@ export default function IAProcessos() {
           subtitleClassName="text-gray-600"
         >
           {t.iaProcessos.title}
-        </SectionTitle>
+        </AnimatedTitle>
       </div>
 
       <motion.div

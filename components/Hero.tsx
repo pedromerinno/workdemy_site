@@ -68,6 +68,8 @@ export default function Hero() {
             >
               <a
                 href="https://app.workdemy.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 bg-[#BF7529] text-white rounded-lg font-medium hover:bg-[#BF7529]/90 transition-all duration-300 hover:scale-105 flex items-center space-x-2"
               >
                 <span>Começar agora</span>

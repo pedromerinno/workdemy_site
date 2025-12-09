@@ -167,6 +167,20 @@ export default function ScrollImageSequence() {
   // Each image needs time to fully appear, so we use images.length * 100vh
   const totalScrollHeight = images.length * 100 // 100vh per image to ensure all appear
 
+  // Animate padding and border radius based on scroll progress
+  // Start applying when scroll enters (0.1) and fully applied in the middle (0.5)
+  const padding = useTransform(
+    scrollYProgress,
+    [0, 0.1, 0.5, 0.9, 1],
+    [0, 16, 24, 16, 0]
+  )
+
+  const borderRadius = useTransform(
+    scrollYProgress,
+    [0, 0.1, 0.5, 0.9, 1],
+    [0, 8, 24, 8, 0]
+  )
+
   return (
     <section
       ref={containerRef}
@@ -174,7 +188,14 @@ export default function ScrollImageSequence() {
       style={{ backgroundColor: '#F9F8F5' }}
     >
       {/* Sticky container for images - Full Width */}
-      <div className="sticky top-0 h-screen w-full flex items-center justify-center z-10">
+      <motion.div 
+        className="sticky top-0 h-screen w-full flex items-center justify-center z-10"
+        style={{
+          padding: padding,
+          borderRadius: borderRadius,
+          overflow: 'hidden'
+        }}
+      >
         {/* Images container - Full Width */}
         <div className="relative w-full h-full">
           {images.map((image, index) => (
@@ -208,7 +229,7 @@ export default function ScrollImageSequence() {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Spacer to create scroll space - ensures last card appears before sticky "unsticks" */}
       {/* This creates enough scroll space for all images to appear */}
@@ -216,3 +237,4 @@ export default function ScrollImageSequence() {
     </section>
   )
 }
+

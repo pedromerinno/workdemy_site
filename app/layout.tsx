@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import CookieConsent from '@/components/CookieConsent'
+import ChatDialog from '@/components/ChatDialog'
 
 export const metadata: Metadata = {
   title: 'Workdemy - Transforme sua carreira com educação de qualidade',
@@ -19,11 +20,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en-US">
       <body>
         <LanguageProvider>
           {children}
           <CookieConsent />
+          <ChatDialog />
         </LanguageProvider>
       </body>
     </html>

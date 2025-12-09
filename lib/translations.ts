@@ -260,6 +260,20 @@ export interface Translations {
     rejectAll: string
     moreOptions: string
   }
+
+  // Chat Dialog
+  chatDialog: {
+    welcome: string
+    question: string
+    talkToAI: string
+    signUp: string
+    scheduleDemo: string
+    needSupport: string
+    privacyNotice: string
+    privacyPolicy: string
+    openChat: string
+    close: string
+  }
 }
 
 const translations: Record<Language, Translations> = {
@@ -547,6 +561,18 @@ const translations: Record<Language, Translations> = {
       rejectAll: 'Rejeitar tudo',
       moreOptions: 'Mais opções',
     },
+    chatDialog: {
+      welcome: 'Bem-vindo',
+      question: 'Procurando por treinamentos corporativos, onboarding ou suporte?',
+      talkToAI: 'Falar com nosso Assistente IA',
+      signUp: 'Cadastrar-se na Workdemy',
+      scheduleDemo: 'Agendar uma demonstração',
+      needSupport: 'Preciso de suporte',
+      privacyNotice: 'Esta conversa pode ser gravada conforme descrito em nossa',
+      privacyPolicy: 'Política de Privacidade',
+      openChat: 'Abrir chat',
+      close: 'Fechar',
+    },
   },
   en: {
     nav: {
@@ -831,6 +857,18 @@ const translations: Record<Language, Translations> = {
       acceptAll: 'Accept all',
       rejectAll: 'Reject all',
       moreOptions: 'More options',
+    },
+    chatDialog: {
+      welcome: 'Welcome',
+      question: 'Looking for corporate training, onboarding, or support?',
+      talkToAI: 'Talk to our AI Assistant',
+      signUp: 'Sign up for Workdemy',
+      scheduleDemo: 'Schedule a demo',
+      needSupport: 'I need support',
+      privacyNotice: 'This chat may be recorded as described in our',
+      privacyPolicy: 'Privacy Policy',
+      openChat: 'Open chat',
+      close: 'Close',
     },
   },
   es: {
@@ -1117,6 +1155,18 @@ const translations: Record<Language, Translations> = {
       acceptAll: 'Aceptar todo',
       rejectAll: 'Rechazar todo',
       moreOptions: 'Más opciones',
+    },
+    chatDialog: {
+      welcome: 'Bienvenido',
+      question: '¿Buscas capacitación corporativa, onboarding o soporte?',
+      talkToAI: 'Hablar con nuestro Asistente IA',
+      signUp: 'Registrarse en Workdemy',
+      scheduleDemo: 'Agendar una demostración',
+      needSupport: 'Necesito soporte',
+      privacyNotice: 'Esta conversación puede ser grabada según se describe en nuestra',
+      privacyPolicy: 'Política de Privacidad',
+      openChat: 'Abrir chat',
+      close: 'Cerrar',
     },
   },
 }

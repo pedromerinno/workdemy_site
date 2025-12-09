@@ -88,7 +88,7 @@ const SectionTitle = React.forwardRef<HTMLHeadingElement, SectionTitleProps>(
       subtitleClassName
     )
 
-    const containerClasses = cn('mb-12 lg:mb-16', {
+    const containerClasses = cn('mt-16 lg:mt-24 mb-12 lg:mb-16', {
       'text-center': align === 'center',
       'text-left': align === 'left',
       'text-right': align === 'right',

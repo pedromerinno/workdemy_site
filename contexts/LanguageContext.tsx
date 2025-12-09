@@ -12,7 +12,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [currentLanguage, setCurrentLanguageState] = useState<Language>('pt')
+  const [currentLanguage, setCurrentLanguageState] = useState<Language>('en')
   const [isHydrated, setIsHydrated] = useState(false)
 
   // Carrega o idioma salvo do localStorage na inicialização (após hidratação)
@@ -23,6 +23,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       setCurrentLanguageState(savedLanguage)
       // Atualiza o atributo lang do HTML
       document.documentElement.lang = savedLanguage === 'pt' ? 'pt-BR' : savedLanguage === 'es' ? 'es-ES' : 'en-US'
+    } else {
+      // Define o idioma padrão (inglês) quando não há idioma salvo
+      document.documentElement.lang = 'en-US'
     }
   }, [])
 
@@ -51,3 +54,4 @@ export function useLanguage() {
   }
   return context
 }
+
