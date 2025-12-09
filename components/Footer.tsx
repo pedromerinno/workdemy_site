@@ -38,12 +38,21 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Logo e Descrição */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-beige-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">W</span>
-              </div>
-              <span className="text-xl font-semibold text-beige-900">Workdemy</span>
-            </div>
+            <a
+              href="#inicio"
+              onClick={(e) => {
+                e.preventDefault()
+                handleNavClick('#inicio')
+              }}
+              className="inline-block hover:opacity-80 transition-opacity"
+              aria-label="Workdemy - Início"
+            >
+              <img
+                src="/assets/workdemy.svg"
+                alt="Workdemy"
+                className="h-6 lg:h-8 w-auto"
+              />
+            </a>
             <p className="text-beige-800 leading-relaxed">
               {t.footer.description}
             </p>

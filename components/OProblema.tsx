@@ -53,7 +53,7 @@ export default function OProblema() {
           animated
           subtitle={t.problema.subtitle}
           subtitleClassName="text-gray-600 max-w-3xl"
-          className="mb-20 lg:mb-28"
+          containerClassName="!mt-0 mb-20 lg:mb-28"
         >
           {t.problema.title}
         </SectionTitle>

@@ -60,6 +60,7 @@ export interface SectionTitleProps
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
   subtitle?: string
   subtitleClassName?: string
+  containerClassName?: string
   animated?: boolean
   animationDelay?: number
   children: React.ReactNode
@@ -75,6 +76,7 @@ const SectionTitle = React.forwardRef<HTMLHeadingElement, SectionTitleProps>(
       as: Component = 'h2',
       subtitle,
       subtitleClassName,
+      containerClassName,
       animated = false,
       animationDelay = 0,
       children,
@@ -92,7 +94,7 @@ const SectionTitle = React.forwardRef<HTMLHeadingElement, SectionTitleProps>(
       'text-center': align === 'center',
       'text-left': align === 'left',
       'text-right': align === 'right',
-    })
+    }, containerClassName)
 
     const titleContent = (
       <Component ref={ref} className={titleClasses} {...props}>
@@ -126,7 +128,7 @@ const SectionTitle = React.forwardRef<HTMLHeadingElement, SectionTitleProps>(
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: animationDelay + 0.2 }}
-                className={cn('mt-4', {
+                className={cn('mt-2', {
                   'mx-auto': align === 'center',
                   'mx-0': align !== 'center',
                 })}
@@ -142,7 +144,7 @@ const SectionTitle = React.forwardRef<HTMLHeadingElement, SectionTitleProps>(
     return (
       <div className={containerClasses}>
         {titleContent}
-        {subtitleContent && <div className="mt-4">{subtitleContent}</div>}
+        {subtitleContent && <div className="mt-2">{subtitleContent}</div>}
       </div>
     )
   }
