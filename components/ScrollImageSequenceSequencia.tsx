@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState, useMemo } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform, MotionValue, AnimatePresence } from 'framer-motion'
+import { useTranslations } from '@/hooks/useTranslations'
 
 // Gera array com todas as imagens da sequência (00000 até 00121 = 122 imagens)
 const TOTAL_IMAGES = 122
@@ -122,17 +123,14 @@ function SequenceImage({ src, index, activeIndex, totalImages, isPreloaded = fal
 }
 
 export default function ScrollImageSequenceSequencia() {
+  const t = useTranslations()
   const containerRef = useRef<HTMLDivElement>(null)
   const [activeIndex, setActiveIndex] = useState(0)
   const [textIndex, setTextIndex] = useState(0)
   const [imagesPreloaded, setImagesPreloaded] = useState(false)
   const imageSequence = useMemo(() => generateImageSequence(), [])
 
-  const textOptions = [
-    'organiza o seu conhecimento',
-    'aprende com ele',
-    'treina o seu time de ponta a ponta',
-  ]
+  const textOptions = t.sequenciaImagens.textOptions
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -286,7 +284,7 @@ export default function ScrollImageSequenceSequencia() {
           }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white leading-tight text-center">
-            A Workdemy{' '}
+            {t.sequenciaImagens.prefix}{' '}
             <span className="inline-block relative min-w-[200px] sm:min-w-[300px] md:min-w-[400px] lg:min-w-[500px]">
               <AnimatePresence mode="wait">
                 <motion.span

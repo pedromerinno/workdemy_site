@@ -148,12 +148,14 @@ export default function Header() {
               e.preventDefault()
               handleNavClick('#inicio')
             }}
-            className="flex items-center gap-2 text-xl lg:text-2xl font-semibold text-[#1A1A1A] tracking-tight hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Workdemy - Início"
           >
-            <span className="relative px-3 py-1.5 rounded-lg" style={{ backgroundColor: '#FFF6E6' }}>
-              <span className="relative">workdemy</span>
-            </span>
+            <img
+              src="/assets/workdemy.svg"
+              alt="Workdemy"
+              className="h-10 lg:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation - Center Section */}

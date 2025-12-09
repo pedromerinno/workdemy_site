@@ -179,29 +179,20 @@ export default function HeroSection() {
           href="#inicio"
           onClick={(e) => handleNavClick('#inicio', e)}
           aria-label="Workdemy - Início"
-          className="flex items-center font-semibold text-[#1A1A1A] tracking-tight hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity"
           animate={{
-            fontSize: isScrolled ? '1.125rem' : '1.5rem',
-            gap: isScrolled ? '0.375rem' : '0.5rem',
+            scale: isScrolled ? 0.9 : 1,
           }}
           transition={{
             duration: 0.3,
             ease: [0.4, 0, 0.2, 1],
           }}
         >
-          <motion.span
-            className="relative px-3 py-1.5 rounded-lg"
-            style={{ backgroundColor: '#FFF6E6' }}
-            animate={{
-              scale: isScrolled ? 0.92 : 1,
-            }}
-            transition={{
-              duration: 0.3,
-              ease: [0.4, 0, 0.2, 1],
-            }}
-          >
-            <span className="relative">workdemy</span>
-          </motion.span>
+          <img
+            src="/assets/workdemy.svg"
+            alt="Workdemy"
+            className="h-6 lg:h-7 w-auto"
+          />
         </motion.a>
 
         {/* Desktop Navigation - Center Section */}

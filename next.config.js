@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Força o Next.js a transpilar framer-motion (necessário para Next.js 14 com Turbo)
+  transpilePackages: ['framer-motion'],
   images: {
     remotePatterns: [
       {

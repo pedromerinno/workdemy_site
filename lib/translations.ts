@@ -92,6 +92,12 @@ export interface Translations {
     }
   }
 
+  // Sequência de Imagens
+  sequenciaImagens: {
+    prefix: string
+    textOptions: string[]
+  }
+
   // Como Funciona
   comoFunciona: {
     subtitle: string
@@ -340,6 +346,14 @@ const translations: Record<Language, Translations> = {
         title: 'Evolui com sua empresa',
         description: 'Quanto mais conteúdos você envia, mais a IA se especializa na realidade da sua empresa. Aprende padrões, identifica necessidades e se torna cada vez mais precisa e útil para sua operação.',
       },
+    },
+    sequenciaImagens: {
+      prefix: 'A Workdemy',
+      textOptions: [
+        'organiza o seu conhecimento',
+        'aprende com ele',
+        'treina o seu time de ponta a ponta',
+      ],
     },
     comoFunciona: {
       subtitle: 'Do conteúdo ao resultado em cliques',
@@ -618,6 +632,14 @@ const translations: Record<Language, Translations> = {
         description: 'The more content you send, the more the AI specializes in your company reality. Learns patterns, identifies needs, and becomes increasingly accurate and useful for your operations.',
       },
     },
+    sequenciaImagens: {
+      prefix: 'Workdemy',
+      textOptions: [
+        'organizes your knowledge',
+        'learns from it',
+        'trains your team end to end',
+      ],
+    },
     comoFunciona: {
       subtitle: 'From content to results in clicks',
       title: 'Frictionless training',
@@ -895,6 +917,14 @@ const translations: Record<Language, Translations> = {
         title: 'Evoluciona con tu empresa',
         description: 'Cuanto más contenido envías, más se especializa la IA en la realidad de tu empresa. Aprende patrones, identifica necesidades y se vuelve cada vez más precisa y útil para tu operación.',
       },
+    },
+    sequenciaImagens: {
+      prefix: 'Workdemy',
+      textOptions: [
+        'organiza tu conocimiento',
+        'aprende de él',
+        'entrena a tu equipo de punta a punta',
+      ],
     },
     comoFunciona: {
       subtitle: 'Del contenido al resultado en clics',
