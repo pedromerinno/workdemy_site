@@ -82,13 +82,13 @@ export default function Depoimentos() {
         </SectionTitle>
 
         {/* Company Navigation */}
-        <div className="flex items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 mb-12 mt-16 overflow-x-auto scrollbar-hide pb-2">
+        <div className="flex items-center justify-center gap-10 sm:gap-14 md:gap-20 lg:gap-24 xl:gap-28 mb-12 mt-16 overflow-x-auto scrollbar-hide pb-2">
           {testimonials.map((testimonial) => (
             <button
               key={testimonial.id}
               onClick={() => setActiveTestimonial(testimonial.id)}
               className={cn(
-                'text-sm sm:text-base md:text-lg font-medium transition-all duration-300 relative pb-2 whitespace-nowrap flex-shrink-0',
+                'text-sm sm:text-base md:text-lg font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0',
                 activeTestimonial === testimonial.id
                   ? 'text-black font-semibold'
                   : 'text-gray-500 hover:text-gray-700'
@@ -97,18 +97,6 @@ export default function Depoimentos() {
               aria-pressed={activeTestimonial === testimonial.id}
             >
               {testimonial.companyName}
-              {activeTestimonial === testimonial.id && (
-                <motion.div
-                  layoutId="activeIndicator"
-                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-black"
-                  initial={false}
-                  transition={{
-                    type: 'spring',
-                    stiffness: 500,
-                    damping: 30,
-                  }}
-                />
-              )}
             </button>
           ))}
         </div>
