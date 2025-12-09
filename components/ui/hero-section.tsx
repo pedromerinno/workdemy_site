@@ -206,13 +206,9 @@ export default function HeroSection() {
 
         {/* Desktop Navigation - Center Section */}
         <motion.div
-          className="hidden lg:flex items-center absolute left-1/2 -translate-x-1/2"
-          animate={{
-            gap: isScrolled ? '1.5rem' : '2rem',
-          }}
-          transition={{
-            duration: 0.3,
-            ease: [0.4, 0, 0.2, 1],
+          className="hidden lg:flex items-center absolute left-1/2 -translate-x-1/2 transition-all duration-300"
+          style={{
+            gap: isScrolled ? '2rem' : '2.5rem',
           }}
         >
           <a 
