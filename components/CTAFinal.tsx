@@ -2,8 +2,11 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { useTranslations } from '@/hooks/useTranslations'
 
 export default function CTAFinal() {
+  const t = useTranslations()
+  
   return (
     <section 
       className="px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-[800px] m-4 sm:m-6 lg:m-8 rounded-3xl"
@@ -26,14 +29,14 @@ export default function CTAFinal() {
             {/* Informação à esquerda */}
             <div className="flex-1">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
-                Transforme seus processos em aprendizado vivo com a IA da Workdemy.
+                {t.ctaFinal.description}
               </h2>
             </div>
 
             {/* Botão à direita */}
             <div className="flex-shrink-0">
               <button className="px-6 py-3 bg-[#BF7529] text-white rounded-full font-semibold text-sm hover:bg-[#BF7529]/90 transition-all duration-300 hover:scale-[1.02] flex items-center gap-2 whitespace-nowrap">
-                <span>Agendar uma demonstração</span>
+                <span>{t.ctaFinal.button}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

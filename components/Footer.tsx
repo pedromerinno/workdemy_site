@@ -8,10 +8,10 @@ export default function Footer() {
   
   const navLinks = [
     { label: t.nav.inicio, href: '#inicio' },
-    { label: 'Sobre', href: '#sobre' },
+    { label: t.nav.sobre, href: '#sobre' },
     { label: t.nav.comoFunciona, href: '#como-funciona' },
-    { label: 'Benefícios', href: '#beneficios' },
-    { label: 'Depoimentos', href: '#depoimentos' },
+    { label: t.nav.beneficios, href: '#beneficios' },
+    { label: t.nav.depoimentos, href: '#depoimentos' },
     { label: t.nav.planos, href: '#planos' },
     { label: 'FAQ', href: '#faq' },
   ]

@@ -4,7 +4,10 @@ export interface Translations {
   // Navigation
   nav: {
     inicio: string
+    sobre: string
     comoFunciona: string
+    beneficios: string
+    depoimentos: string
     recursos: string
     planos: string
     entrar: string
@@ -280,7 +283,10 @@ const translations: Record<Language, Translations> = {
   pt: {
     nav: {
       inicio: 'Início',
+      sobre: 'Sobre',
       comoFunciona: 'Como Funciona',
+      beneficios: 'Benefícios',
+      depoimentos: 'Depoimentos',
       recursos: 'Recursos',
       planos: 'Planos',
       entrar: 'Entrar',
@@ -577,7 +583,10 @@ const translations: Record<Language, Translations> = {
   en: {
     nav: {
       inicio: 'Home',
+      sobre: 'About',
       comoFunciona: 'How It Works',
+      beneficios: 'Benefits',
+      depoimentos: 'Testimonials',
       recursos: 'Features',
       planos: 'Pricing',
       entrar: 'Sign In',
@@ -875,7 +884,10 @@ const translations: Record<Language, Translations> = {
     // Spanish translations would go here when needed
     nav: {
       inicio: 'Inicio',
+      sobre: 'Acerca de',
       comoFunciona: 'Cómo Funciona',
+      beneficios: 'Beneficios',
+      depoimentos: 'Testimonios',
       recursos: 'Recursos',
       planos: 'Planes',
       entrar: 'Entrar',
