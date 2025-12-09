@@ -13,7 +13,7 @@ export default function ResultadosEsperados() {
     {
       icon: TrendingDown,
       texto: t.resultadosEsperados.items[0],
-      color: '#BF7529',
+      color: '#CB6F01',
       gradient: 'from-orange-50 to-amber-50',
     },
     {

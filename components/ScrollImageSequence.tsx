@@ -217,7 +217,7 @@ export default function ScrollImageSequence() {
               key={index}
               className={`h-2 rounded-full transition-all ${
                 activeIndex === index
-                  ? 'bg-[#BF7529] w-8'
+                  ? 'bg-[#CB6F01] w-8'
                   : 'bg-white/40 w-2'
               }`}
               initial={false}

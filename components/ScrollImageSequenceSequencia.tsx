@@ -332,7 +332,7 @@ export default function ScrollImageSequenceSequencia() {
             </span>
             <div className="h-1 w-32 bg-white/20 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-[#BF7529] rounded-full"
+                className="h-full bg-[#CB6F01] rounded-full"
                 initial={false}
                 animate={{
                   width: `${((activeIndex + 1) / TOTAL_IMAGES) * 100}%`

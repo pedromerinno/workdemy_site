@@ -208,7 +208,7 @@ export default function HeroSection() {
             className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
           >
             {t.nav.inicio}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BF7529] group-hover:w-full transition-all duration-200"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
           </a>
 
           <a 
@@ -217,7 +217,7 @@ export default function HeroSection() {
             className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
           >
             {t.nav.comoFunciona}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BF7529] group-hover:w-full transition-all duration-200"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
           </a>
 
           <a 
@@ -226,7 +226,7 @@ export default function HeroSection() {
             className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
           >
             {t.nav.recursos}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BF7529] group-hover:w-full transition-all duration-200"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
           </a>
 
           <a 
@@ -235,7 +235,7 @@ export default function HeroSection() {
             className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
           >
             {t.nav.planos}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BF7529] group-hover:w-full transition-all duration-200"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
           </a>
         </motion.div>
 
@@ -277,7 +277,7 @@ export default function HeroSection() {
                       className={cn(
                         "w-full text-left px-4 py-2.5 text-sm font-medium transition-colors duration-150 flex items-center justify-between gap-2",
                         currentLanguage === lang.code
-                          ? "bg-[#FFF6E6] text-[#BF7529]"
+                          ? "bg-[#FFF6E6] text-[#CB6F01]"
                           : "text-[#4F4F4F] hover:bg-[#F9F9F9] hover:text-[#1A1A1A]"
                       )}
                     >
@@ -320,7 +320,7 @@ export default function HeroSection() {
             href="https://app.workdemy.com/signup"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#BF7529] hover:bg-[#A6631F] text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98] whitespace-nowrap"
+            className="bg-[#CB6F01] hover:bg-[#B56301] text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98] whitespace-nowrap"
             animate={{
               paddingLeft: isScrolled ? '1rem' : '1.25rem',
               paddingRight: isScrolled ? '1rem' : '1.25rem',
@@ -419,7 +419,7 @@ export default function HeroSection() {
                       className={cn(
                         "text-left px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150 flex items-center justify-between gap-2",
                         currentLanguage === lang.code
-                          ? "bg-[#FFF6E6] text-[#BF7529]"
+                          ? "bg-[#FFF6E6] text-[#CB6F01]"
                           : "text-[#4F4F4F] hover:bg-[#F9F9F9] hover:text-[#1A1A1A]"
                       )}
                     >
@@ -444,7 +444,7 @@ export default function HeroSection() {
                 href="https://app.workdemy.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center px-5 py-3 bg-[#BF7529] hover:bg-[#A6631F] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
+                className="w-full text-center px-5 py-3 bg-[#CB6F01] hover:bg-[#B56301] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
               >
                 {t.nav.comecarAgora}
               </a>
@@ -508,13 +508,13 @@ export default function HeroSection() {
       </p>
 
       <div className="relative z-10 mx-auto w-full flex items-center justify-center gap-3 mt-8">
-        <a href="https://app.workdemy.com/signup" target="_blank" rel="noopener noreferrer" className="bg-[#BF7529] hover:bg-[#BF7529]/90 text-white px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:shadow-lg hover:scale-105 active:scale-100">
+        <a href="https://app.workdemy.com/signup" target="_blank" rel="noopener noreferrer" className="bg-[#CB6F01] hover:bg-[#CB6F01]/90 text-white px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:shadow-lg hover:scale-105 active:scale-100">
           {t.hero.comecarAgora}
         </a>
-        <button className="flex items-center gap-2 border border-[#BF7529]/30 hover:border-[#BF7529]/50 hover:bg-[#BF7529]/10 rounded-full px-8 py-4 transition-all shadow-sm hover:shadow-md group">
-          <span className="text-[#BF7529] font-medium">{t.hero.saibaMais}</span>
+        <button className="flex items-center gap-2 border border-[#CB6F01]/30 hover:border-[#CB6F01]/50 hover:bg-[#CB6F01]/10 rounded-full px-8 py-4 transition-all shadow-sm hover:shadow-md group">
+          <span className="text-[#CB6F01] font-medium">{t.hero.saibaMais}</span>
           <ArrowRight 
-            className="w-4 h-4 text-[#BF7529] group-hover:translate-x-1 transition-all duration-200" 
+            className="w-4 h-4 text-[#CB6F01] group-hover:translate-x-1 transition-all duration-200" 
             aria-hidden="true"
           />
         </button>

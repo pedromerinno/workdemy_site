@@ -81,7 +81,7 @@ export default function ParaQuem() {
                 {/* Link "Saiba mais" */}
                 <a
                   href="#recursos"
-                  className="inline-flex items-center gap-2 text-[#BF7529] font-medium hover:gap-3 transition-all group self-start text-base"
+                  className="inline-flex items-center gap-2 text-[#CB6F01] font-medium hover:gap-3 transition-all group self-start text-base"
                 >
                   <span>Saiba mais</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

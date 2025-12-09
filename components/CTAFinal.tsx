@@ -35,7 +35,7 @@ export default function CTAFinal() {
 
             {/* Botão à direita */}
             <div className="flex-shrink-0">
-              <button className="px-6 py-3 bg-[#BF7529] text-white rounded-full font-semibold text-sm hover:bg-[#BF7529]/90 transition-all duration-300 hover:scale-[1.02] flex items-center gap-2 whitespace-nowrap">
+              <button className="px-6 py-3 bg-[#CB6F01] text-white rounded-full font-semibold text-sm hover:bg-[#CB6F01]/90 transition-all duration-300 hover:scale-[1.02] flex items-center gap-2 whitespace-nowrap">
                 <span>{t.ctaFinal.button}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>

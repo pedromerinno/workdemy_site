@@ -70,7 +70,7 @@ export default function Hero() {
                 href="https://app.workdemy.com/signup"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-[#BF7529] text-white rounded-lg font-medium hover:bg-[#BF7529]/90 transition-all duration-300 hover:scale-105 flex items-center space-x-2"
+                className="px-8 py-4 bg-[#CB6F01] text-white rounded-lg font-medium hover:bg-[#CB6F01]/90 transition-all duration-300 hover:scale-105 flex items-center space-x-2"
               >
                 <span>Começar agora</span>
                 <ArrowRight className="w-5 h-5" />

@@ -58,7 +58,7 @@ export function Features() {
                         </div>
 
                         <div>
-                            <div className="rounded-lg mb-1 ml-auto w-3/5 bg-[#BF7529] p-3 text-xs text-white">Molestiae numquam debitis et ullam distinctio provident nobis repudiandae deleniti necessitatibus.</div>
+                            <div className="rounded-lg mb-1 ml-auto w-3/5 bg-[#CB6F01] p-3 text-xs text-white">Molestiae numquam debitis et ullam distinctio provident nobis repudiandae deleniti necessitatibus.</div>
                             <span className="text-muted-foreground block text-right text-xs">Now</span>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ const Map = () => {
 const chartConfig = {
     desktop: {
         label: 'Desktop',
-        color: '#BF7529',
+        color: '#CB6F01',
     },
     mobile: {
         label: 'Mobile',

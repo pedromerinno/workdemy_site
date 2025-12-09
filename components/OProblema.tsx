@@ -149,7 +149,7 @@ export default function OProblema() {
                       <span className="text-lg text-gray-600">{t.problema.lideresDesperdicam.horasSemanais}</span>
                     </div>
                     <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#BF7529] rounded-full" style={{ width: '50%' }} />
+                      <div className="h-full bg-[#CB6F01] rounded-full" style={{ width: '50%' }} />
                     </div>
                   </div>
 
@@ -165,7 +165,7 @@ export default function OProblema() {
                   <div className="flex items-center gap-2 pt-2">
                     <div className="flex -space-x-2">
                       {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#D4A574] to-[#BF7529] border-2 border-white flex items-center justify-center text-white text-xs font-medium">
+                        <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-[#D4A574] to-[#CB6F01] border-2 border-white flex items-center justify-center text-white text-xs font-medium">
                           {i}
                         </div>
                       ))}

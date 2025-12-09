@@ -75,7 +75,7 @@ export default function ComoFunciona() {
                             <div>
                                 <div className="flex items-center gap-2">
                                     <span className="flex justify-center items-center size-5 rounded-full border border-gray-300">
-                                        <span className="size-3 rounded-full bg-[#BF7529]"/>
+                                        <span className="size-3 rounded-full bg-[#CB6F01]"/>
                                     </span>
                                     <span className="text-gray-500 text-xs">{t.comoFunciona.iaAnalisa.agora}</span>
                                 </div>
@@ -85,7 +85,7 @@ export default function ComoFunciona() {
                             </div>
 
                             <div>
-                                <div className="rounded-lg mb-1 ml-auto w-3/5 bg-[#BF7529] p-3 text-xs text-white shadow-sm">
+                                <div className="rounded-lg mb-1 ml-auto w-3/5 bg-[#CB6F01] p-3 text-xs text-white shadow-sm">
                                     {t.comoFunciona.iaAnalisa.trilhaCriada}
                                 </div>
                                 <span className="text-gray-500 block text-right text-xs">{t.comoFunciona.iaAnalisa.agora}</span>
@@ -158,7 +158,7 @@ const Map = () => {
 const getChartConfig = (t: ReturnType<typeof useTranslations>) => ({
     concluidos: {
         label: t.comoFunciona.chart.concluidos,
-        color: '#BF7529',
+        color: '#CB6F01',
     },
     emAndamento: {
         label: t.comoFunciona.chart.emAndamento,

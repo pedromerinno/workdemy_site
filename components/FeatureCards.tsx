@@ -46,10 +46,10 @@ export default function FeatureCards() {
                       {/* Bottom horizontal bar (partial) */}
                       <div className="absolute bottom-0 left-0 w-24 h-3 bg-yellow-400 rounded-full" style={{ transform: 'rotateX(-15deg) rotateY(5deg)' }} />
                       {/* Left vertical bar (partial) */}
-                      <div className="absolute top-0 left-0 w-3 h-24 bg-[#BF7529] rounded-full" style={{ transform: 'rotateY(-15deg) rotateX(-5deg)' }} />
+                      <div className="absolute top-0 left-0 w-3 h-24 bg-[#CB6F01] rounded-full" style={{ transform: 'rotateY(-15deg) rotateX(-5deg)' }} />
                       
                       {/* Spheres at frame points */}
-                      <div className="absolute -top-2 -left-2 w-6 h-6 bg-[#BF7529] rounded-full shadow-lg" />
+                      <div className="absolute -top-2 -left-2 w-6 h-6 bg-[#CB6F01] rounded-full shadow-lg" />
                       <div className="absolute -top-2 -right-2 w-6 h-6 bg-beige-500 rounded-full shadow-lg" />
                       <div className="absolute top-1/2 -right-2 -translate-y-1/2 w-6 h-6 bg-beige-400 rounded-full shadow-lg" />
                       <div className="absolute -bottom-2 left-8 w-6 h-6 bg-yellow-500 rounded-full shadow-lg" />

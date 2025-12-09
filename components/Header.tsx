@@ -170,7 +170,7 @@ export default function Header() {
                 className="text-sm font-semibold text-[#4F4F4F] hover:text-[#1A1A1A] transition-colors duration-200 relative group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#BF7529] group-hover:w-full transition-all duration-200"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#CB6F01] group-hover:w-full transition-all duration-200"></span>
               </a>
             ))}
           </div>
@@ -211,7 +211,7 @@ export default function Header() {
                         className={cn(
                           "w-full text-left px-4 py-2.5 text-sm font-medium transition-colors duration-150 flex items-center justify-between gap-2",
                           currentLanguage === lang.code
-                            ? "bg-[#FFF6E6] text-[#BF7529]"
+                            ? "bg-[#FFF6E6] text-[#CB6F01]"
                             : "text-[#4F4F4F] hover:bg-[#F9F9F9] hover:text-[#1A1A1A]"
                         )}
                       >
@@ -238,7 +238,7 @@ export default function Header() {
               href="https://app.workdemy.com/signup"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-[#BF7529] hover:bg-[#A6631F] text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
+              className="px-5 py-2.5 bg-[#CB6F01] hover:bg-[#B56301] text-white text-sm font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98]"
             >
               Começar agora
             </a>
@@ -329,7 +329,7 @@ export default function Header() {
                         className={cn(
                           "text-left px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150 flex items-center justify-between gap-2",
                           currentLanguage === lang.code
-                            ? "bg-[#FFF6E6] text-[#BF7529]"
+                            ? "bg-[#FFF6E6] text-[#CB6F01]"
                             : "text-[#4F4F4F] hover:bg-[#F9F9F9] hover:text-[#1A1A1A]"
                         )}
                       >
@@ -354,7 +354,7 @@ export default function Header() {
                   href="https://app.workdemy.com/signup"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-center px-5 py-3 bg-[#BF7529] hover:bg-[#A6631F] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
+                  className="w-full text-center px-5 py-3 bg-[#CB6F01] hover:bg-[#B56301] text-white text-base font-medium rounded-lg transition-all duration-200 shadow-sm active:scale-[0.98]"
                 >
                   Começar agora
                 </a>

@@ -6,3 +6,5 @@ export function useTranslations(): Translations {
   return getTranslations(currentLanguage)
 }
 
+
+

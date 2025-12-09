@@ -12,6 +12,28 @@ export const metadata: Metadata = {
     shortcut: '/assets/favicon.svg',
     apple: '/assets/favicon.svg',
   },
+  openGraph: {
+    title: 'Workdemy | Cultura começa aqui.',
+    description: 'Plataforma de Gestão Educacional - Workdemy.',
+    url: 'https://workdemy.com',
+    siteName: 'Workdemy',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Workdemy - Dashboard',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Workdemy | Cultura começa aqui.',
+    description: 'Plataforma de Gestão Educacional - Workdemy.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({

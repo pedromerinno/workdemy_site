@@ -73,15 +73,15 @@ export default function ChatDialog() {
               damping: 20,
             }}
             onClick={handleOpen}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A6631F] active:scale-95"
+            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B56301] active:scale-95"
             style={{
-              backgroundColor: 'rgb(166 99 31)',
+              backgroundColor: 'rgb(203 111 1)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(166, 99, 31, 0.9)'
+              e.currentTarget.style.backgroundColor = 'rgba(203, 111, 1, 0.9)'
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgb(166 99 31)'
+              e.currentTarget.style.backgroundColor = 'rgb(203 111 1)'
             }}
             aria-label={t.chatDialog.openChat}
             aria-expanded={isOpen}

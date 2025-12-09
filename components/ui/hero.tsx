@@ -53,7 +53,7 @@ const Hero = React.forwardRef<HTMLDivElement, HeroProps>(
         {ctaText && ctaLink && (
           <Link href={ctaLink}>
             <div 
-              className="inline-flex items-center bg-[#BF7529] text-[#ffffff] rounded-[10px] hover:bg-[#BF7529]/90 transition-colors font-instrument-sans w-[227px] h-[49px] animate-appear opacity-0 delay-500"
+              className="inline-flex items-center bg-[#CB6F01] text-[#ffffff] rounded-[10px] hover:bg-[#CB6F01]/90 transition-colors font-instrument-sans w-[227px] h-[49px] animate-appear opacity-0 delay-500"
             >
               <div className="flex items-center justify-between w-full pl-[22px] pr-[17px]">
                 <span className="text-[19px] whitespace-nowrap">{ctaText}</span>

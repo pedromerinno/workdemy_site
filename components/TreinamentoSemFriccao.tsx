@@ -106,7 +106,7 @@ const SecondaryFeatureCard = () => (
       alt="Equipe aprendendo juntos"
       className="h-60 w-full object-cover"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-[#BF7529]/30 via-transparent to-transparent dark:from-[#BF7529]/40" />
+    <div className="absolute inset-0 bg-gradient-to-t from-[#CB6F01]/30 via-transparent to-transparent dark:from-[#CB6F01]/40" />
     <p className="absolute bottom-6 left-6 z-10 max-w-[80%] text-xl font-bold text-white [text-shadow:_0_1px_4px_rgb(0_0_0_/_30%)]">
       Pequenas mudanças, grande impacto no caminho!
     </p>

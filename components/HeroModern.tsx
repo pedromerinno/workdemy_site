@@ -59,11 +59,11 @@ export default function HeroModern() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-col sm:flex-row items-start gap-4 pt-2"
             >
-              <a href="https://app.workdemy.com/signup" target="_blank" rel="noopener noreferrer" className="px-8 py-4 lg:px-10 lg:py-5 bg-[#BF7529] text-white rounded-lg font-semibold hover:bg-[#BF7529]/90 transition-all duration-300 hover:scale-105 flex items-center gap-2 shadow-lg text-base lg:text-lg">
+              <a href="https://app.workdemy.com/signup" target="_blank" rel="noopener noreferrer" className="px-8 py-4 lg:px-10 lg:py-5 bg-[#CB6F01] text-white rounded-lg font-semibold hover:bg-[#CB6F01]/90 transition-all duration-300 hover:scale-105 flex items-center gap-2 shadow-lg text-base lg:text-lg">
                 <span>Começar agora</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <button className="px-8 py-4 lg:px-10 lg:py-5 bg-transparent border-2 border-[#BF7529] text-[#BF7529] rounded-lg font-semibold hover:bg-[#BF7529] hover:text-white transition-all flex items-center gap-2 text-base lg:text-lg">
+              <button className="px-8 py-4 lg:px-10 lg:py-5 bg-transparent border-2 border-[#CB6F01] text-[#CB6F01] rounded-lg font-semibold hover:bg-[#CB6F01] hover:text-white transition-all flex items-center gap-2 text-base lg:text-lg">
                 <Play className="w-5 h-5" />
                 <span>Ver demonstração</span>
               </button>
